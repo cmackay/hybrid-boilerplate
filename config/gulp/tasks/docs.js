@@ -54,7 +54,10 @@ gulp.task('docs:todo', function () {
       verbose  : config.watch,
 
       transformComment: function (file, line, text) {
-        return ['| ' + file + ' | ' + line + ' | ' + text];
+        return [
+          '| [' + file + '](' + file + '#L' + line + ') ' +
+          '| ' + line + ' | ' + text
+        ];
       },
 
       transformHeader: function (kind) {
