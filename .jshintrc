@@ -1,0 +1,30 @@
+{
+  "browser"      : true,
+  "bitwise"      : true,
+  "immed"        : true,
+  "newcap"       : true,
+  "noarg"        : true,
+  "noempty"      : true,
+  "nonew"        : true,
+  "trailing"     : true,
+  "maxlen"       : 200,
+  "boss"         : true,
+  "eqnull"       : true,
+  "expr"         : true,
+  "globalstrict" : true,
+  "laxbreak"     : true,
+  "loopfunc"     : true,
+  "sub"          : true,
+  "undef"        : true,
+  "indent"       : 2,
+  "node"         : true,
+  "globals": {
+		"describe"   : false,
+		"it"         : false,
+		"before"     : false,
+		"beforeEach" : false,
+		"after"      : false,
+		"afterEach"  : false,
+		"inject"     : false
+  }
+}

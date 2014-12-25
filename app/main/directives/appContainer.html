@@ -1,0 +1,31 @@
+
+<ion-side-menus>
+
+  <!-- main pane -->
+  <ion-pane ion-side-menu-content drag-content="true">
+    <!-- nav bar -->
+    <ion-nav-bar>
+    </ion-nav-bar>
+
+    <!-- nav view -->
+    <ion-nav-view>
+    </ion-nav-view>
+  </ion-pane>
+
+  <!-- menu -->
+  <ion-side-menu side="left">
+    <!-- menu title -->
+    <ion-header-bar>
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+
+    <!-- menu content -->
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ui-sref='notes.index'>My Notes</ion-item>
+        <ion-item menu-close ui-sref='about.index'>About</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>

@@ -1,0 +1,37 @@
+
+<ion-view title="{{notesDetailCtrl.title}}">
+
+  <ion-nav-buttons side="left">
+    <button
+      class="button button-clear icon ion-navicon"
+      menu-toggle="left">
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content scroll="true">
+    <ion-list>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Title</span>
+        <input type="text"
+          placeholder="Title"
+          ng-model="notesDetailCtrl.note.title">
+      </label>
+    </ion-list>
+  </ion-content>
+
+  <div class="bar bar-footer">
+    <div class="button-bar">
+      <button
+        class="button button-clear"
+        ng-click="notesDetailCtrl.cancel()">
+        Cancel
+      </button>
+      <button
+        class="button button-clear"
+        ng-click="notesDetailCtrl.save()">
+        Save
+      </button>
+    </div>
+  </div>
+
+</ion-view>

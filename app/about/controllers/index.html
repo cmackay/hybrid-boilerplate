@@ -1,0 +1,36 @@
+
+<ion-view title="{{aboutIndexCtrl.title}}">
+
+  <ion-nav-buttons side="left">
+    <button
+      class="button button-clear icon ion-navicon"
+      menu-toggle="left">
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content scroll="true">
+
+    <ion-list>
+      <ion-item class="item-icon-left"
+        ng-click="aboutIndexCtrl.clickVersion()">
+
+        <i class="icon ion-iphone"></i>
+        App Version
+        <span class="item-note">{{aboutIndexCtrl.appVersion}}</span>
+      </ion-item>
+    </ion-list>
+
+    <ion-list ng-if="aboutIndexCtrl.showDebug">
+      <ion-item class="item-divider">
+        Debug
+      </ion-item>
+      <ion-item class="item-icon-left"
+        ng-click="aboutIndexCtrl.resetData()">
+        <i class="icon ion-trash-b"></i>
+        Reset Data
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+
+</ion-view>
