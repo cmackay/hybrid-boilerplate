@@ -1,3 +1,11 @@
+### 0.0.3 (2014-12-25)
+
+
+#### Features
+
+* **docs:** added linking of todos ([93ee3ea6](https://github.com/cmackay/hybrid-boilerplate/commit/93ee3ea63ebecf3cc6067402f4836abc370875f1))
+
+
 ### 0.0.2 (2014-12-25)
 
 
