@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.github.cmackay.hybrid_boilerplate" version="0.0.1">
+  <name>hybrid-boilerplate</name>
+  <description>
+    hybrid boilerplate application
+  </description>
+  <author email="cmackay@users.noreply.github.com" href="http://cmackay.github.io/hybrid-boilerplate">
+    hybrid-boilerplate team
+  </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+</widget>

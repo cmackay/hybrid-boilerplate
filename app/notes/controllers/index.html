@@ -1,0 +1,56 @@
+
+<ion-view title="{{notesIndexCtrl.title}}">
+
+  <ion-nav-buttons side="left">
+    <button
+      class="button button-clear icon ion-navicon"
+      menu-toggle="left">
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button
+      class="button button-clear icon ion-search"
+      ng-click="$hasSubheader = !$hasSubheader">
+    </button>
+    <button
+      class="button button-clear icon ion-gear-a">
+    </button>
+  </ion-nav-buttons>
+
+  <!-- TODO add filter -->
+  <ion-header-bar class="bar-subheader" ng-if="$hasSubheader">
+    <input type="search"
+      placeholder="Filter notes..."
+      ng-model="search"
+      ng-change="filter()">
+    <button ng-if="search.length"
+      class="button button-icon ion-android-close input-button">
+    </button>
+  </ion-header-bar>
+
+  <ion-content
+    has-bouncing="true"
+    padding="false"
+    scroll="true">
+
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="$broadcast('scroll.refreshComplete')">
+    </ion-refresher>
+
+    <ion-list>
+      <ion-item
+        class="item animated-item"
+        ng-repeat="note in notesIndexCtrl.notes"
+        ui-sref="notes.detail({ id: note._id })">
+        {{ note.title }}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+  <button class="button icon button-add"
+    ui-sref="notes.detail({ id: 'new' })">
+  </button>
+
+</ion-view>

@@ -1,0 +1,7 @@
+{
+  "name": "hybrid-boilerplate",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "watch"
+  ]
+}

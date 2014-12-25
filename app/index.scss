@@ -1,0 +1,63 @@
+
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #ef4e3a !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../bower_components/ionic/fonts" !default;
+
+@import "ionic/scss/ionic";
+
+.animated-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+.animated-item.ng-leave.ng-leave-active,
+.animated-item.ng-enter {
+  opacity: 0;
+  max-height: 0;
+}
+.animated-item.ng-leave,
+.animated-item.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.button.button-icon.input-button {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #bbb;
+}
+
+.button-add {
+  @extend .button-clear;
+  @extend .icon;
+  @extend .ion-plus-circled;
+  &.activated {
+    @extend .button-clear;
+  }
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: 10px;
+  &.icon:before {
+    font-size: 46px;
+  }
+}
