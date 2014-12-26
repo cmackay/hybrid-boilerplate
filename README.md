@@ -3,7 +3,20 @@ hybrid-boilerplate
 
 ## Overview
 
-Provides a hyprid application start project using [Ionic](http://ionicframework.com/), [Webpack](http://webpack.github.io/) and many other technologies. Along with providing a basic commonjs structure for application code it also provides many of the common build tasks needed for projects. This includes live reloading using [BrowserSync](http://www.browsersync.io/), [Karma](http://karma-runner.github.io/) for test running, code reports using [Plato](https://github.com/es-analysis/plato), [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) for deploying new releases, [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) github user site generation, and many other tasks. This is a work in progress so some features are not yet fully implemented.
+Provides a hyprid application starter project using [Ionic](http://ionicframework.com/), [Webpack](http://webpack.github.io/) and many other technologies. Along with providing a basic commonjs structure for application code, the project also provides many of the common build tasks needed for projects. This includes live reloading using [BrowserSync](http://www.browsersync.io/), [Karma](http://karma-runner.github.io/) for test running,
+[jscs](https://github.com/jscs-dev/node-jscs) & [jshint](http://jshint.com/) for style and lint checking,
+code reports using [Plato](https://github.com/es-analysis/plato),
+[conventional-changelog](https://github.com/ajoslin/conventional-changelog) for automatic change log generation,
+[Dgeni](https://github.com/angular/dgeni) for generating docs, [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) for deploying new releases,
+[gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) github user site generation, and many other tasks. This is a work in progress so some features are not yet fully implemented.
+
+For a complete list of dependencies, refer to the [package.json](package.json) and [bower.json](bower.json).
+
+### Recent Changes
+[CHANGELOG.md](CHANGELOG.md)
+
+### TODOs
+[TODO.md](TODO.md)
 
 ## Quick Start
 
