@@ -63,7 +63,7 @@ gulp.task('docs:todo', function () {
       transformHeader: function (kind) {
         return [
           '### ' + kind + 's',
-          '| Filename | line # | todo',
+          '| Filename | Line # | Comment',
           '|:---------|:------:|:-------'
         ];
       }
