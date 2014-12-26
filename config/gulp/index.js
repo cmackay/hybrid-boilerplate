@@ -8,8 +8,6 @@ var fs   = require('fs'),
   path   = require('path'),
   notify = require('gulp-notify');
 
-// TODO change gulp folder to config folder which includes docs config
-
 // don't need duplicated error messages
 notify.logLevel(0);
 

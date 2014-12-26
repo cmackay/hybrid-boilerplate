@@ -64,7 +64,7 @@ gulp.task('docs:todo', function () {
         return [
           '### ' + kind + 's',
           '| Filename | line # | todo',
-          '|:--------:|:------:|:------:'
+          '|:---------|:------:|:-------'
         ];
       }
     }))
