@@ -1,3 +1,11 @@
+### 0.0.8 (2014-12-26)
+
+
+#### Features
+
+* **build:** update TODO header ([575c9ce4](https://github.com/cmackay/hybrid-boilerplate/commit/575c9ce4426126c026bddfd86873bbeca4642f1b))
+
+
 ### 0.0.7 (2014-12-26)
 
 
