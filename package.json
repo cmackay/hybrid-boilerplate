@@ -1,6 +1,6 @@
 {
   "name": "hybrid-boilerplate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "hybrid boilerplate application",
   "scripts": {
     "install": "./node_modules/.bin/bower install && ./node_modules/.bin/gulp"

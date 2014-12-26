@@ -1,3 +1,11 @@
+### 0.0.5 (2014-12-26)
+
+
+#### Features
+
+* **docs:** updated README.md ([18052878](https://github.com/cmackay/hybrid-boilerplate/commit/18052878e7c8d89705a92a380fbf28013c19253e))
+
+
 ### 0.0.4 (2014-12-26)
 
 
