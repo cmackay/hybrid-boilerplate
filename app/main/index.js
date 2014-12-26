@@ -9,7 +9,7 @@ var angular    = require('angular'),
 
 module.exports = angular
 
-  .module('app.layout', [
+  .module('app.main', [
     require('../common/libs').name,
     require('../common/db').name,
   ])
