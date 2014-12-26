@@ -1,3 +1,11 @@
+### 0.0.7 (2014-12-26)
+
+
+#### Features
+
+* **build:** updated TODO markdown formatting ([81853d52](https://github.com/cmackay/hybrid-boilerplate/commit/81853d527fdfe72731a050b2e49db708bdd92709))
+
+
 ### 0.0.6 (2014-12-26)
 
 
