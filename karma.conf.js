@@ -21,6 +21,8 @@ module.exports = function(config) {
     captureTimeout : 60000,
 
     files: [
+      'bower_components/angular/angular.js',
+      'bower_components/angular-mocks/angular-mocks.js',
       'app/**/*.spec.js'
     ],
 
