@@ -1,3 +1,11 @@
+### 0.0.4 (2014-12-26)
+
+
+#### Features
+
+* **build:** added angular mocks ([1d8df950](https://github.com/cmackay/hybrid-boilerplate/commit/1d8df950dc5e07b1ac3e8b4b054bc769a1604dfc))
+
+
 ### 0.0.3 (2014-12-25)
 
 
