@@ -59,8 +59,9 @@ $ gulp watch
 Release Mode (git flow release, updates versions, docs and gh-pages site)
 
 ```bash
-$ gulp release
+$ gulp release [--major || --minor]
 ```
+Optionally a major or minor argument can be passed to represent a major or minor release. By default release will do a patch release incrementing the last part of the version. The version consists of the following parts: MAJOR.MINOR.PATCH. If gulp release is run with no arguments and the version is 1.0.0, it would increment to 1.0.1.
 
 Adding Cordova Plugins
 
