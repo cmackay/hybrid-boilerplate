@@ -1,3 +1,11 @@
+### 0.0.9 (2014-12-29)
+
+
+#### Features
+
+* **docs:** added dependency list to README ([cf2398f5](https://github.com/cmackay/hybrid-boilerplate/commit/cf2398f5039a4727c9d0739e6068e035502cead8))
+
+
 ### 0.0.8 (2014-12-26)
 
 
