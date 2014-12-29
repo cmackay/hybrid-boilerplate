@@ -22,6 +22,7 @@ _.mixin(require('git-promise/util'));
 // optional args: --major --minor  (default to patch)
 gulp.task('release', function (done) {
   process.env.GIT_MERGE_AUTOEDIT = 'no';
+  // TODO execute cordova build as part of the release
   runSequence(
     'release:prepare',
     'release:git:start',

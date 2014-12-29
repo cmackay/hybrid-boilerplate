@@ -3,20 +3,32 @@ hybrid-boilerplate
 
 ## Overview
 
-Provides a hyprid application starter project using [Ionic](http://ionicframework.com/), [Webpack](http://webpack.github.io/) and many other technologies. Along with providing a basic commonjs structure for application code, the project also provides many of the common build tasks needed for projects. This includes live reloading using [BrowserSync](http://www.browsersync.io/), [Karma](http://karma-runner.github.io/) for test running,
-[jscs](https://github.com/jscs-dev/node-jscs) & [jshint](http://jshint.com/) for style and lint checking,
-code reports using [Plato](https://github.com/es-analysis/plato),
-[conventional-changelog](https://github.com/ajoslin/conventional-changelog) for automatic change log generation,
-[Dgeni](https://github.com/angular/dgeni) for generating docs, [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) for deploying new releases,
-[gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) github user site generation, and many other tasks. This is a work in progress so some features are not yet fully implemented.
+Provides a basic hyprid starter application using [Ionic](http://ionicframework.com/), [Webpack](http://webpack.github.io/) and many other technologies. The main goals are to provide a commonjs application structure along with many of the common build tasks required for a project.
 
-For a complete list of dependencies, refer to the [package.json](package.json) and [bower.json](bower.json).
+### Application Libraries:
+* [Ionic](http://ionicframework.com/) - Hybrid Framework
+* [Angular](http://angularjs.org) - App Framework
+* [PouchDB](http://pouchdb.com) - used in example notes app to store and query local data
 
-### Recent Changes
-[CHANGELOG.md](CHANGELOG.md)
+### Build Libraries:
+* [Gulp](http://gulpjs.com/) - Build System
+* [JSCS](https://github.com/jscs-dev/node-jscs) - JavaScript Style Checker
+* [JSHint](http://jshint.com/) - JavaScript Linter
+* [webpack](http://webpack.github.io/) - Module Bundler
+* [Karma](http://karma-runner.github.io/) - Test Runner
+* [BrowserSync](http://www.browsersync.io/) - Browser Testing and Live Reloading
+* [Plato](https://github.com/es-analysis/plato) - Code Analysis Reporting
+* [conventional-changelog](https://github.com/ajoslin/conventional-changelog) - Automatic changelog generation from git commits
+* [Dgeni](https://github.com/angular/dgeni) - Documentation Generator
+* [gulp-todo](https://www.npmjs.com/package/gulp-todo) - Generates markdown page from TODO messages in source scripts
+* [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) - Git workflow for managing branching and releases
+* [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) - GitHub gh-pages site generation
 
-### TODOs
-[TODO.md](TODO.md)
+The above represents a partial list of some of the libraries used. For a complete list of dependencies, refer to the [package.json](package.json) and [bower.json](bower.json).
+
+### Generated Changelog and TODOs
+* [CHANGELOG](CHANGELOG.md)
+* [TODO](TODO.md)
 
 ## Quick Start
 
@@ -30,6 +42,12 @@ Install the dependencies
 
 ```bash
 $ npm install
+```
+
+Initialize project settings (TODO)
+
+```bash
+$ gulp init
 ```
 
 Watch Mode (this will watch the webpack bundle and run browser-sync)
