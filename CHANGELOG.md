@@ -1,3 +1,11 @@
+## 0.1.0 (2014-12-29)
+
+
+#### Features
+
+* **docs:** README updates for gulp release task ([d879d886](https://github.com/cmackay/hybrid-boilerplate/commit/d879d8861f78c8595395d2362b3e1da5ff629592))
+
+
 ### 0.0.9 (2014-12-29)
 
 
