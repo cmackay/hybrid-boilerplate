@@ -27,7 +27,6 @@ gulp.task('release', function (done) {
   // TODO execute cordova build as part of the release
   runSequence(
     'release:prepare',
-    'release:git:clean-tmp-repo',
     'release:git:start',
     'release:git:start',
     'release:git:publish',
@@ -40,6 +39,7 @@ gulp.task('release', function (done) {
     'docs',
     'release:git:commit',
     'release:git:finish',
+    'release:git:clean-tmp-repo',
     'release:git:pages',
     _.runCallback(done)
   );
