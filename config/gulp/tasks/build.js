@@ -21,6 +21,9 @@ gulp.task('build', function (done) {
 });
 
 gulp.task('build:webpack', function (done) {
+  if (config.devtool) {
+    webpackConfig.devtool = config.devtool;
+  }
   var started = false,
     bundler   = webpack(webpackConfig);
 
