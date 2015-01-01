@@ -7,8 +7,9 @@ Provides a basic hyprid starter application using [Ionic](http://ionicframework.
 
 ### Application Libraries:
 * [Ionic](http://ionicframework.com/) - Hybrid Framework
-* [Angular](http://angularjs.org) - App Framework
-* [PouchDB](http://pouchdb.com) - used in example notes app to store and query local data
+* [Angular](http://angularjs.org) - Javascript Framework
+* [PouchDB](http://pouchdb.com) - Local database used in example notes app
+* [Apache Cordova](http://cordova.apache.org/) - Hybrid Application Platform
 
 ### Build Libraries:
 * [Gulp](http://gulpjs.com/) - Build System
@@ -18,10 +19,13 @@ Provides a basic hyprid starter application using [Ionic](http://ionicframework.
 * [Karma](http://karma-runner.github.io/) - Test Runner
 * [BrowserSync](http://www.browsersync.io/) - Browser Testing and Live Reloading
 * [Plato](https://github.com/es-analysis/plato) - Code Analysis Reporting
-* [conventional-changelog](https://github.com/ajoslin/conventional-changelog) - Automatic changelog generation from git commits
 * [Dgeni](https://github.com/angular/dgeni) - Documentation Generator
-* [gulp-todo](https://www.npmjs.com/package/gulp-todo) - Generates markdown page from TODO messages in source scripts
 * [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) - Git workflow for managing branching and releases
+* [git-promise](https://github.com/piuccio/git-promise) - Used during build to run git commands
+* [conventional-changelog](https://github.com/ajoslin/conventional-changelog) - Automatic changelog generation from git commits
+* [gulp-todo](https://www.npmjs.com/package/gulp-todo) - Generates markdown page from TODO messages in source scripts
+* [gulp-bump](https://github.com/stevelacy/gulp-bump) - Increments json versions during release in package.json and bower.json
+* [gulp-xml-editor](https://github.com/morou/gulp-xml-editor) - Increments xml version during release in Cordova config.xml
 * [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) - GitHub gh-pages site generation
 
 The above represents a partial list of some of the libraries used. For a complete list of dependencies, refer to the [package.json](package.json) and [bower.json](bower.json).
