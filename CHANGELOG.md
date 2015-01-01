@@ -1,3 +1,11 @@
+### 0.1.5 (2015-01-01)
+
+
+#### Features
+
+* **build:** added source map settings ([89af6699](https://github.com/cmackay/hybrid-boilerplate/commit/89af6699cbf6eb7ce5985c109fe77849850b152e))
+
+
 ### 0.1.4 (2015-01-01)
 
 
