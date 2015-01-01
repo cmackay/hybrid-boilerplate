@@ -1,3 +1,14 @@
+### 0.1.4 (2015-01-01)
+
+
+#### Bug Fixes
+
+* **build:**
+  * remove duplicated release start ([c6616fd4](https://github.com/cmackay/hybrid-boilerplate/commit/c6616fd43793d556203b28833fe1a05fefe1fdee))
+  * changed order of release steps ([6f23539c](https://github.com/cmackay/hybrid-boilerplate/commit/6f23539c344798d40daabca2a8a434f4003a3a85))
+  * remove tmpRepo during release ([c4cb8981](https://github.com/cmackay/hybrid-boilerplate/commit/c4cb8981f6603fae839ec2447b80666496787b0d))
+
+
 ### 0.1.3 (2015-01-01)
 
 
