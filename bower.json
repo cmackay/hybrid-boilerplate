@@ -1,6 +1,6 @@
 {
   "name": "hybrid-boilerplate",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "dependencies": {
     "ionic": "git@github.com:driftyco/ionic-bower.git#v1.0.0-beta.13",
     "pouchdb": "~3.1.0",
