@@ -28,7 +28,6 @@ gulp.task('release', function (done) {
   runSequence(
     'release:prepare',
     'release:git:start',
-    'release:git:start',
     'release:git:publish',
     'release:version:json',
     'release:version:xml',
