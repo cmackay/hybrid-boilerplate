@@ -1,3 +1,11 @@
+### 0.1.1 (2015-01-01)
+
+
+#### Features
+
+* **reports:** added istanbul for test coverage ([265ec135](https://github.com/cmackay/hybrid-boilerplate/commit/265ec135a5042c345dc236cebb0b74aed4ba6e53))
+
+
 ## 0.1.0 (2014-12-29)
 
 
