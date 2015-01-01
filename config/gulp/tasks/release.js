@@ -7,6 +7,8 @@
 var gulp      = require('gulp'),
   gutil       = require('gulp-util'),
   runSequence = require('run-sequence'),
+  del         = require('del'),
+  path        = require('path'),
   argv        = require('yargs').argv,
   semver      = require('semver'),
   git         = require('git-promise'),
@@ -25,6 +27,8 @@ gulp.task('release', function (done) {
   // TODO execute cordova build as part of the release
   runSequence(
     'release:prepare',
+    'release:git:clean-tmp-repo',
+    'release:git:start',
     'release:git:start',
     'release:git:publish',
     'release:version:json',
@@ -164,4 +168,9 @@ gulp.task('release:version:xml', function () {
 gulp.task('release:git:pages', function () {
   return gulp.src('./release/**/*')
     .pipe(pages());
+});
+
+gulp.task('release:git:clean-tmp-repo', function (done) {
+  var tmpRepo = path.join(require('os').tmpdir(), 'tmpRepo');
+  del([tmpRepo], {force: true, dot: true}, _.runCallback(done));
 });
