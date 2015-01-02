@@ -32,10 +32,23 @@ _.mixin({
     return json;
   },
 
+  loadJson: function (filepath) {
+    return JSON.parse(fs.readFileSync(filepath, 'utf8'));
+  },
+
+  saveJson: function (filepath, json) {
+    fs.writeFileSync(filepath, JSON.stringify(json, null, '  '));
+  },
+
+  updateJson: function (path, callback) {
+    var json = _.loadJson(path);
+    json = callback(json);
+    _.saveJson(path, json);
+  },
+
   getPackage: function () {
     // using fs to prevent caching
-    var filepath = path.join(config.base, 'package.json');
-    return JSON.parse(fs.readFileSync(filepath, 'utf8'));
+    return this.loadJson(path.join(config.base, 'package.json'));
   }
 
 });
