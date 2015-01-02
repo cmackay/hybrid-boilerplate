@@ -1,3 +1,11 @@
+### 0.1.7 (2015-01-02)
+
+
+#### Features
+
+* **build:** added git init task ([15609cb1](https://github.com/cmackay/hybrid-boilerplate/commit/15609cb1cba90566b5f3e2bf4fa2dc85e085596a))
+
+
 ### 0.1.6 (2015-01-02)
 
 
