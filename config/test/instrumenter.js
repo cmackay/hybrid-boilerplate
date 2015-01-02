@@ -51,10 +51,10 @@ module.exports = {
       // this adds any sources that were not explicitely required
       // so that accurate coverage percentages are reported
       this.onBrowserComplete = function (browser, result) {
+        if (!result.coverage) {
+          return;
+        }
         self.eachEntry(function (value, key) {
-          if (!result.coverage) {
-            return;
-          }
           if (!result.coverage[key]) {
             result.coverage[key] = value.coverage;
           }
@@ -63,6 +63,7 @@ module.exports = {
     };
     PreloadPlugin.$inject = ['config'];
     return {
+      // TODO maybe extend karma-coverage so that this is not necessary
       'reporter:add-preloaded' : ['type', PreloadPlugin]
     };
   },
