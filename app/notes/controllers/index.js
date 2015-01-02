@@ -2,10 +2,10 @@
 'use strict';
 
 /**
-* @class NotesIndexCtrl
-* @classdesc The notes index
-* @ngInject
-*/
+ * @class NotesIndexCtrl
+ * @classdesc The notes index
+ * @ngInject
+ */
 function NotesIndexCtrl ($log, notes, app) {
 
   var vm = this;

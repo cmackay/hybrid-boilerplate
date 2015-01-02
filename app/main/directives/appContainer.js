@@ -2,10 +2,10 @@
 'use strict';
 
 /**
-* @class AppContainer
-* @classdesc The app container
-* @ngInject
-*/
+ * @class AppContainer
+ * @classdesc The app container
+ * @ngInject
+ */
 module.exports = function AppContainer () {
 
   return {

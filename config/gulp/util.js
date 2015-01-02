@@ -2,8 +2,8 @@
 'use strict';
 
 /**
-* Module dependencies
-*/
+ * Module dependencies
+ */
 var _    = require('lodash'),
   fs     = require('fs'),
   path   = require('path'),

@@ -2,8 +2,8 @@
 'use strict';
 
 /**
-* Module dependencies
-*/
+ * Module dependencies
+ */
 var gulp      = require('gulp'),
   runSequence = require('run-sequence'),
   browserSync = require('browser-sync'),

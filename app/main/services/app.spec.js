@@ -1,6 +1,9 @@
 
 'use strict';
 
+/**
+ * Module dependencies
+ */
 var angular = require('angular');
 
 require('angular-mocks/angular-mocks');

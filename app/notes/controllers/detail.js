@@ -2,10 +2,10 @@
 'use strict';
 
 /**
-* @class NotesDetailCtrl
-* @classdesc The note detail
-* @ngInject
-*/
+ * @class NotesDetailCtrl
+ * @classdesc The note detail
+ * @ngInject
+ */
 function NotesDetailCtrl ($state, app, note) {
 
   var vm = this;

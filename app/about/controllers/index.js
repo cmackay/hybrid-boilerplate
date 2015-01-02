@@ -2,10 +2,10 @@
 'use strict';
 
 /**
-* @class AboutIndexCtrl
-* @classdesc The about index
-* @ngInject
-*/
+ * @class AboutIndexCtrl
+ * @classdesc The about index
+ * @ngInject
+ */
 function AboutIndexCtrl ($log, $window, appVersion, app, _) {
 
   var vm = this;

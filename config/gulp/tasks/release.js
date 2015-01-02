@@ -2,8 +2,8 @@
 'use strict';
 
 /**
-* Module dependencies
-*/
+ * Module dependencies
+ */
 var gulp      = require('gulp'),
   gutil       = require('gulp-util'),
   runSequence = require('run-sequence'),

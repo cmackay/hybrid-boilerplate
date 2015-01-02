@@ -2,8 +2,8 @@
 'use strict';
 
 /**
-* Module dependencies
-*/
+ * Module dependencies
+ */
 var fs   = require('fs'),
   path   = require('path'),
   notify = require('gulp-notify');
