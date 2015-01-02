@@ -1,6 +1,9 @@
 
 'use strict';
 
+/**
+ * Module dependencies
+ */
 var instrumenter = require('../test/instrumenter');
 
 module.exports = function (source) {

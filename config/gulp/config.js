@@ -2,8 +2,8 @@
 'use strict';
 
 /**
-* Module dependencies
-*/
+ * Module dependencies
+ */
 var path = require('path');
 
 module.exports = {

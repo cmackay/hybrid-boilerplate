@@ -2,8 +2,8 @@
 'use strict';
 
 /**
-* Module dependencies
-*/
+ * Module dependencies
+ */
 var angular      = require('angular'),
   AboutIndexCtrl = require('./controllers/index');
 

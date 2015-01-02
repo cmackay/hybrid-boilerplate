@@ -2,8 +2,8 @@
 'use strict';
 
 /**
-* Module dependencies
-*/
+ * Module dependencies
+ */
 var gulp = require('gulp'),
   del    = require('del'),
   _      = require('../util');

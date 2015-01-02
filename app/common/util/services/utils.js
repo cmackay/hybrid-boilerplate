@@ -1,6 +1,9 @@
 
 'use strict';
 
+/**
+ * Module dependencies
+ */
 var ionic = require('ionic/js/ionic'),
   _       = require('lodash');
 
