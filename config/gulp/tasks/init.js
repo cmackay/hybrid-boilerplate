@@ -54,9 +54,8 @@ var getDefaults = function (remoteOrigin) {
   };
 };
 
-var inquire = function (remoteOrigin, callback) {
-  var defaults    = getDefaults(remoteOrigin),
-    whenContinued = function (answers) {
+var inquire = function (defaults, callback) {
+  var whenContinued = function (answers) {
       return answers.continue;
     };
 
@@ -131,7 +130,10 @@ var inquire = function (remoteOrigin, callback) {
 gulp.task('init', function (done) {
   getRemoteOrigin()
     .then(function (remoteOrigin) {
-      inquire(remoteOrigin, function (answers) {
+
+      var defaults = getDefaults(remoteOrigin);
+
+      inquire(defaults, function (answers) {
         if (answers.continue) {
           // update package json
           _.updateJson('package.json', function (json) {
