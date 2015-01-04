@@ -1,3 +1,11 @@
+### 0.1.9 (2015-01-03)
+
+
+#### Bug Fixes
+
+* **build:** setting karma-webpack to 1.3.1 ([640788f7](https://github.com/cmackay/hybrid-boilerplate/commit/640788f759b5eef852c810a7086234215c7a1c0a))
+
+
 ### 0.1.8 (2015-01-03)
 
 
