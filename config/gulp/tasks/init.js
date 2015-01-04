@@ -30,6 +30,7 @@ var getRemoteOrigin = function () {
 };
 
 var getDefaults = function (remoteOrigin) {
+  // TODO add support for git urls
   var remoteUrl   = url.parse(remoteOrigin),
     remotePath    = remoteUrl.pathname.split('/'),
     repositoryUrl = remoteOrigin.replace(/\.git/, ''),
@@ -148,6 +149,7 @@ gulp.task('init', function (done) {
             json.version = answers.version;
             return json;
           });
+          // TODO add support for updating ionic config
           // update cordova config
           gulp.src('./config.xml')
             .pipe(xeditor(function (xml, xmljs) {
