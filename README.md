@@ -34,6 +34,9 @@ The above represents a partial list of some of the libraries used. For a complet
 * [CHANGELOG](CHANGELOG.md)
 * [TODO](TODO.md)
 
+## Dependencies
+* [git-flow](http://danielkummer.github.io/git-flow-cheatsheet/) needs to be installed for doing releases
+
 ## Quick Start
 
 Fork and clone the repository
