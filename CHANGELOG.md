@@ -1,3 +1,11 @@
+### 0.1.10 (2015-01-10)
+
+
+#### Features
+
+* **docs:** added dependencies section to read ([7c6f65d0](https://github.com/cmackay/hybrid-boilerplate/commit/7c6f65d0c0655a6a25a785c6fc8c72de95b2e84a))
+
+
 ### 0.1.9 (2015-01-03)
 
 
