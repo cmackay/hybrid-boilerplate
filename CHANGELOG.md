@@ -1,3 +1,11 @@
+### 0.1.12 (2015-01-10)
+
+
+#### Features
+
+* **notes:** added an action sheet on hold ([43439db9](https://github.com/cmackay/hybrid-boilerplate/commit/43439db9a1c7db2b5871e323b088bcf40a0e4aa4))
+
+
 ### 0.1.11 (2015-01-10)
 
 
