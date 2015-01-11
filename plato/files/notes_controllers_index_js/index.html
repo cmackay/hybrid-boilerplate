@@ -44,11 +44,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"  data-container="body"></i></a></h2>
-      <p class="stat">84.61</p>
+      <p class="stat">79.23</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC" data-container="body"></i></h2>
-      <p class="stat">27</p>
+      <p class="stat">53</p>
     </div>
   </div>
   <div class="row historical">
@@ -62,11 +62,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty" data-container="body"></i></a></h2>
-      <p class="stat">6.59</p>
+      <p class="stat">9.57</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs" data-container="body"></i></a></h2>
-      <p class="stat">0.07</p>
+      <p class="stat">0.27</p>
     </div>
   </div>
 </div>
@@ -96,12 +96,38 @@
  * @classdesc The notes index
  * @ngInject
  */
-function NotesIndexCtrl ($log, notes, app) {
+function NotesIndexCtrl ($log, $state, $ionicActionSheet, notes, app) {
 
   var vm = this;
 
   vm.title = &#039;My Notes&#039;;
   vm.notes = notes;
+
+  vm.showActionSheet = function (note) {
+    var hideSheet = $ionicActionSheet.show({
+      buttons: [{
+        text: &#039;Edit Note&#039;
+      }],
+      destructiveText : &#039;Delete&#039;,
+      cancelText      : &#039;Cancel&#039;,
+      buttonClicked: function (index) {
+        if (index === 0) {
+          $state.go(&#039;notes.detail&#039;, {
+            id: note._id
+          });
+        }
+        return true;
+      },
+      destructiveButtonClicked: function () {
+        app.removeNote(note)
+          .then(function () {
+            $state.go(&#039;notes.index&#039;, {}, {reload: true});
+          }, function (err) {
+            $log.error(&#039;removeNote error&#039;, err);
+          });
+      }
+    });
+  };
 
 }
 
