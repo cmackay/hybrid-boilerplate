@@ -15,7 +15,7 @@ gulp.task('watch', function (done) {
     'watch:set',
     'build',
     'watch:browser-sync',
-    'test',
+    //'test',
     _.runCallback(done)
   );
 });

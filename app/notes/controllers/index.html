@@ -43,7 +43,8 @@
       <ion-item
         class="item animated-item"
         ng-repeat="note in notesIndexCtrl.notes"
-        ui-sref="notes.detail({ id: note._id })">
+        ui-sref="notes.detail({ id: note._id })"
+        on-hold="notesIndexCtrl.showActionSheet(note)">
         {{ note.title }}
       </ion-item>
     </ion-list>
