@@ -5,7 +5,7 @@
  * Module dependencies
  */
 var angular  = require('angular'),
-  ionic      = require('ionic/js/ionic');
+  ionic      = require('ionic/release/js/ionic');
 
 /**
  * Setup App Module

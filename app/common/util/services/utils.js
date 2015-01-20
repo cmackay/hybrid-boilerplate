@@ -4,7 +4,7 @@
 /**
  * Module dependencies
  */
-var ionic = require('ionic/js/ionic'),
+var ionic = require('ionic/release/js/ionic'),
   _       = require('lodash');
 
 /**
