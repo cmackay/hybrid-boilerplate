@@ -15,8 +15,8 @@ global.__webpack_public_path__ = src.substr(0, src.lastIndexOf('/') + 1);
 require('angular-animate');
 require('angular-sanitize');
 require('angular-ui-router');
-require('ionic/js/ionic');
-require('ionic/js/ionic-angular');
+require('ionic/release/js/ionic');
+require('ionic/release/js/ionic-angular');
 
 // This module provides a place for global
 var libsModule = module.exports = angular
