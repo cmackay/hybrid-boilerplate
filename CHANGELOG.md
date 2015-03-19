@@ -1,3 +1,35 @@
+<a name"0.1.14"></a>
+### 0.1.14 (2015-03-19)
+
+
+#### Bug Fixes
+
+* **build:**
+  * updated versions for node 0.12 ([cd2ea9fd](https://github.com/cmackay/hybrid-boilerplate/commit/cd2ea9fd))
+  * setting karma-webpack to 1.3.1 ([640788f7](https://github.com/cmackay/hybrid-boilerplate/commit/640788f7))
+  * remove duplicated release start ([c6616fd4](https://github.com/cmackay/hybrid-boilerplate/commit/c6616fd4))
+  * changed order of release steps ([6f23539c](https://github.com/cmackay/hybrid-boilerplate/commit/6f23539c))
+  * remove tmpRepo during release ([c4cb8981](https://github.com/cmackay/hybrid-boilerplate/commit/c4cb8981))
+
+
+#### Features
+
+* **build:**
+  * added git init task ([15609cb1](https://github.com/cmackay/hybrid-boilerplate/commit/15609cb1))
+  * added source map settings ([89af6699](https://github.com/cmackay/hybrid-boilerplate/commit/89af6699))
+  * update TODO header ([575c9ce4](https://github.com/cmackay/hybrid-boilerplate/commit/575c9ce4))
+  * updated TODO markdown formatting ([81853d52](https://github.com/cmackay/hybrid-boilerplate/commit/81853d52))
+  * added angular mocks ([1d8df950](https://github.com/cmackay/hybrid-boilerplate/commit/1d8df950))
+* **docs:**
+  * added dependencies section to read ([7c6f65d0](https://github.com/cmackay/hybrid-boilerplate/commit/7c6f65d0))
+  * README updates for gulp release task ([d879d886](https://github.com/cmackay/hybrid-boilerplate/commit/d879d886))
+  * added dependency list to README ([cf2398f5](https://github.com/cmackay/hybrid-boilerplate/commit/cf2398f5))
+  * updated README.md ([fb6b7392](https://github.com/cmackay/hybrid-boilerplate/commit/fb6b7392))
+  * updated README.md ([18052878](https://github.com/cmackay/hybrid-boilerplate/commit/18052878))
+* **notes:** added an action sheet on hold ([43439db9](https://github.com/cmackay/hybrid-boilerplate/commit/43439db9))
+* **reports:** added istanbul for test coverage ([265ec135](https://github.com/cmackay/hybrid-boilerplate/commit/265ec135))
+
+
 ### 0.1.13 (2015-01-19)
 
 
