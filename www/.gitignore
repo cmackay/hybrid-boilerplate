@@ -1,4 +1,9 @@
-# Ignore everything in this directory
+# Ignore everything in this directory but make sure
+# the directory is checked in so that the cordova
+# commands recognize the project as a cordova project.
+# It looks for the www directory. The actual sources
+# are stored in the app directory and the web pack
+# process outputs them to this directory.
 *
 # Except this file
 !.gitignore

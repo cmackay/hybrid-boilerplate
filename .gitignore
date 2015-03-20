@@ -6,6 +6,7 @@ node_modules/
 platforms/
 plugins/
 release/
+.publish/
 .tmp/
 .sass-cache/
 .DS_Store
