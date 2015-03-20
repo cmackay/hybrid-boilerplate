@@ -73,7 +73,7 @@ var inquire = function (defaults, callback) {
     default  : defaults.name,
     validate : function (input) {
       var result = require('validate-npm-package-name')(input);
-      if (result.valid) {
+      if (result.validForNewPackages) {
         return true;
       }
       return result.errors.join(', ');
