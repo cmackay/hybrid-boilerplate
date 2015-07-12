@@ -85,10 +85,10 @@ module.exports = {
   plugins: [
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(
-          'bower.json', ['main'])
+        'bower.json', ['main'])
     ),
     new NGAnnotatePlugin({
-        add: true
+      add: true
     }),
     new webpack.optimize.DedupePlugin(),
     new HtmlWebpackPlugin({
