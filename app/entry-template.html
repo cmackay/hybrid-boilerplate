@@ -8,7 +8,9 @@
   </head>
   <body>
     <div class="app-container"></div>
-    {% for (var chunk in o.htmlWebpackPlugin.assets) { %}<script src="{%=o.htmlWebpackPlugin.assets[chunk]%}"></script>{% } %}
+    {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+    <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+    {% } %}
     <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->
   </body>
 </html>

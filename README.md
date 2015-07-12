@@ -3,7 +3,7 @@ hybrid-boilerplate
 
 ## Overview
 
-Provides a basic hyprid starter application using [Ionic](http://ionicframework.com/), [Webpack](http://webpack.github.io/) and many other technologies. The main goals are to provide a commonjs application structure along with many of the common build tasks required for a project.
+Provides a basic hybrid starter application using [Ionic](http://ionicframework.com/), [Webpack](http://webpack.github.io/) and many other technologies. The main goals are to provide a commonjs application structure along with many of the common build tasks required for a project.
 
 ### Application Libraries:
 * [Ionic](http://ionicframework.com/) - Hybrid Framework
